@@ -8,24 +8,22 @@ var lowercaseletters = ['q','w','e','r','t','y','u','i','o','p','a','s','d','f',
 var uppercaseletters = ['Q','W','E','R','T','Y','Y','U','I','I','O','P','A','S','D','F','G','H','J','K','L','Z','X','C','V','B','N','M']
 
 // array of numeric characters
-var numericcharacters = ['1','2','3','4','5','6','7'.'8','9']
+var numericcharacters = ['1','2','3','4','5','6','7','8','9']
 
 //Onclick event when button is pressed
-generateBtn.addEventListener('click', passwordChar;)
+//generateBtn.addEventListener('click', passwordChar;)
 
 // referance to the #generate element
 var generateBtn = document.querySelector("#generate")
 
 // On generate button open prompt question
-function passwordChar()   {
-  var length = parseInt(
-    prompt('How many characters would you like your password to contain?') 
-    );
+document.getElementById("generate").addEventListener("click", function()   {
+      var length = parseInt(prompt('How many characters would you like your password to contain?'));
 
   // Condition to check if answer is a number
    if (isNaN(length) === true) {
        alert('Password length must be provided as a number'); 
-       return;
+       return;                                                                                                                             
        
 }
   // Condition to check if answer is less than 8 characters, if less than 8 then an alert will keep showing
@@ -40,21 +38,22 @@ function passwordChar()   {
 }
 
   // Condition to check if you want special characters
-  _var specialcharacters =  confirm("Click OK to confirm using special characters";
+  var specialCharacters =  confirm("Click OK to confirm using special characters");
   
   
   
   
   // Condition to check if you want numeric characters
-  _var numericcharacters = confirm("Click OK to confirm using numeric characters");
+  var numericCharacters = confirm("Click OK to confirm using numeric characters");
   
   
   //Condition to check if you want lowercase characters
-  _var lowercaseletters; = confirm("Click OK to confirm using numeric characters");
+  var lowercaseLetters = confirm("Click OK to confirm using numeric characters");
   
   
   //Condition to check if you want uppercase characters
-  _var uppercaseletters; = confirm("Click OK to confirm using uppercase letters");
+  var uppercaseLetters = confirm("Click OK to confirm using uppercase letters");
+})
 
 
 
