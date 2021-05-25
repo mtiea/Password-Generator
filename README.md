@@ -10,3 +10,7 @@ This is a password generator than allows you to generate an 8 digit or more pass
 
 ## Deployed link
 https://ttmgs.github.io/Password-Generator/
+
+## Things to implement in the future
+- Added CSS styling
+- PWA app
