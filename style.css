@@ -150,3 +150,6 @@ button[disabled] {
 }
 
 
+body{
+  background-image: url('./password.jpg');
+}
